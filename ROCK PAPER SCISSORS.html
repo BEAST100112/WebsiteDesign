@@ -1,38 +1,75 @@
 ROCK PAPER SCISSORS
+Rock Paper Scissor
+
 <html>
+
 <head>
-<title>ROCK PAPER SCISSORS</title>
+
+  <title>Rock, Paper, Scissors</title>
+
 </head>
+
 <body>
-<h1>ROCK PAPER SCISSORS</h1>
-<button onclick="playGame('rock')">ROCK</button>
-<button onclick="playGame('paper')">PAPER</button>
-<button onclick="playGame('scissors')">SCISSORS</button>
-<p id="result"></p>
 
-<script>
-function playGame(userChoice){
-const choices=["rock","paper","scissors"];
-const computerChoice=
-choices[Math.floor(Math.random()*choices.length)]
-let result;
+  <h1>Rock, Paper, Scissors</h1>
 
-if(userChoice===computerChoice){
-result="It's a draw!!!";
-}else if(
-(userChoice==="rock"&&computerChoice==="scissors")||
-(userChoice==="paper"&&computerChoice==="rock")||
-(userChoice==="scissors"&&computerChoice==="paper")
-){
-result="You win!";
-}else{
-result="You lose!";
-}
+  <button onclick="playGame('rock')">Rock</button>
 
-document.getElementByld("result").innerText=
-'You chose${userChoice},Computer chose$
-{computerChoice}.$result';
-}
-</script>
+  <button onclick="playGame('paper')">Paper</button>
+
+  <button onclick="playGame('scissors')">Scissors</button>
+
+  <p id="result"></p>
+
+ 
+
+  <script>
+
+    function playGame(userChoice) {
+
+      const choices = ["rock", "paper", "scissors"];
+
+      const computerChoice = choices[Math.floor(Math.random() * choices.length)];
+
+      let result;
+
+ 
+
+      if (userChoice === computerChoice) {
+
+        result = "It's a draw!";
+
+      } else if (
+
+        (userChoice === "rock" && computerChoice === "scissors") ||
+
+        (userChoice === "paper" && computerChoice === "rock") ||
+
+        (userChoice === "scissors" && computerChoice === "paper")
+
+      ) {
+
+        result = "You win!";
+
+      } else {
+
+        result = "You lose!";
+
+      }
+
+ 
+
+      document.getElementById("result").innerText =
+
+        `You chose ${userChoice}, Computer chose ${computerChoice}. ${result}`;
+
+    }
+
+  </script>
+
 </body>
+
 </html>
+
+ 
+
