@@ -13,7 +13,7 @@
 <button type="button" onclick="calculate("*")">Multiply</button><br>
 <button type="button" onclick="calculate("/")">Divide</button><br>
 </form>
-
+<p id="result"></p>
   <script>
   function calculate(operator){
   const num1=parseFloat(document.getElementByld("num1").value);
@@ -31,7 +31,7 @@ result=num1/num2;
 }else{
 result="Cannot Be Divided By Zero";
 }
-document.getElementByld("result").innerText="Result"+result;
+document.getElementByid("result").innerText="Result"+result;
 }
 </script>
 </body>
